@@ -19,6 +19,10 @@ button {
 button:hover{
     color: rgb(157, 0, 255);
 }
+a:link,a:hover{
+    color: #000;
+    text-decoration: none;
+}
 
 button::before {
     content: "";
