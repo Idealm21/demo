@@ -1,0 +1,40 @@
+header{
+    /* background-color: aqua; */
+    height: 60px;
+}
+
+.header-button{
+    padding: 10px;
+    margin: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+button {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+button:hover{
+    color: rgb(157, 0, 255);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(157, 0, 255);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.4s ease;
+  }
+
+  button:hover::before {
+    transform: scaleX(1);
+  }
+  
